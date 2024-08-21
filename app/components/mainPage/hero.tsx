@@ -34,7 +34,7 @@ const HeroSection: FC<HeroSectionProps> = ({ className }) => {
             whileTap={{ scale: 0.95 }}
             className="bg-primary-light w-[20%] text-center hover:bg-secondary-light shadow-md hover:text-primary-light hover:shadow-primary-light text-text-dark lg:px-6 px-3 lg:py-3 py-2 rounded-md font-semibold"
           >
-            <Link href='/getStarted'>Get Started</Link>
+            <Link href='/getStarted/intro'>Get Started</Link>
           </motion.div>
         </div>
         <div className=" lg:w-1/2 lg:block hidden w-full h-[28rem] z-40">
