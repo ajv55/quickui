@@ -19,14 +19,18 @@ const Showcase: React.FC = () => {
   };
 
   return (
-    <div className="py-6 px-4 w-full bg-background-dark h-screen overflow-scroll space-y-12">
-      <div className="w-full flex flex-col justify-start items-start text-center mb-12">
-        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Input Fields Showcase</h1>
-        <div className="bg-gradient-to-r from-secondary-light to-primary-light h-1 w-full mb-8" />
-        <p className="text-lg text-left text-text-dark leading-relaxed w-full">
-          Welcome to the <span className='bg-gradient-to-br text-xl from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent'>Input Fields Showcase!</span> This page is dedicated to demonstrating the flexibility and creativity you can achieve with custom input fields in your applications. Here, you'll discover a variety of input field styles, each thoughtfully designed to cater to different user needs and design preferences. From basic text inputs to sophisticated fields with icons and animations, this showcase highlights a range of options that enhance both functionality and visual appeal. Each example is provided with a code snippet, making it easy for you to integrate or adapt these designs into your own projects. Explore these diverse styles, understand their unique features, and get inspired to craft input fields that enhance the user experience and align with your application's aesthetic.
-        </p>
+    <div className="p-8 w-full bg-background-dark h-screen overflow-scroll space-y-12">
+      <div className="text-center flex flex-col items-start justify-start mb-8">
+        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Input Field Showcase</h1>
+        <section className="flex justify-start items-start flex-col">
+          <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
+          <p className="text-lg text-left text-text-dark mb-4">
+            The <code className="text-primary-dark">Input Field</code> component is a versatile and essential UI element designed to capture user input. It supports various types such as text, password, email, and more. Below are examples illustrating different styles and configurations of input fields.
+          </p>
+          <h2 className="text-3xl font-semibold text-secondary-light">Usage Examples</h2>
+        </section>
       </div>
+
             
       <section className="bg-background-light p-6 rounded-lg shadow-lg">
         <h2 className="text-3xl text-primary-light font-semibold mb-4">1. Basic Text Input</h2>

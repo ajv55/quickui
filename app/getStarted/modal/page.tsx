@@ -139,13 +139,16 @@ const ModalShowcase: FC = () => {
   };
 
   return (
-    <div className="py-5 px-4 w-full bg-background-dark overflow-scroll h-screen">
-      <div className="text-center flex flex-col items-start justify-start mb-12">
+    <div className="p-8 w-full bg-background-dark overflow-scroll h-screen">
+      <div className="text-center flex flex-col items-start justify-start mb-8">
         <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Modal Showcase</h1>
-        <div className=" bg-gradient-to-br from-secondary-light to-primary-light h-1 w-full mb-8" />
-        <p className="text-lg text-text-dark text-left leading-relaxed w-full mx-auto">
-          Welcome to our <span className='bg-gradient-to-br text-xl from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent'>Modal Showcase</span>! Here, you'll find a collection of different modal designs that demonstrate various animation styles, background colors, and text options. These modals are perfect for adding interactive elements to your website, such as pop-up notifications, user prompts, and custom dialogs. Each example is accompanied by the code needed to implement it, allowing you to easily integrate these modals into your projects. Explore the options below and find the perfect modal design to enhance your user experience.
-        </p>
+        <section className="flex justify-start items-start flex-col">
+          <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
+          <p className="text-lg text-left text-text-dark mb-4">
+            The <code className="text-primary-dark">Modal</code> component is a flexible and interactive UI element designed to capture user attention and present important information or actions. It supports various styles and configurations, such as default, informational, confirmation, and custom layouts. Below are examples demonstrating different uses of the Modal component.
+          </p>
+          <h2 className="text-3xl font-semibold text-secondary-light">Usage Examples</h2>
+        </section>
       </div>
       {modalExamples.map((modal: any) => (
         <div key={modal.id} className="mb-12 border border-gray-200 rounded-lg bg-background-light shadow-lg p-6">

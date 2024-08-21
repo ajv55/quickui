@@ -40,21 +40,17 @@ const Showcase: React.FC = () => {
 
   return (
     <div className="py-6 px-4 w-full bg-background-dark h-screen overflow-scroll space-y-12">
-      <div className="w-full flex flex-col justify-start items-start text-center mb-12">
-        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">
-          Form Showcase
-        </h1>
-        <div className="bg-gradient-to-r from-secondary-light to-primary-light h-1 w-full mb-8" />
-        <p className="text-lg text-left text-text-dark leading-relaxed w-full">
-          Welcome to the <span className='bg-gradient-to-br text-xl from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent'>Form Showcase!</span> 
-          This page is designed to highlight the versatility and creativity you can achieve with custom forms in your application. 
-          Here, you will find a diverse collection of form styles, each meticulously crafted to demonstrate various design approaches and functionality. 
-          Whether you need a simple, minimalistic form for basic data collection or a more complex, multi-step form to guide users through a detailed process, 
-          this showcase covers a wide range of use cases. Each example is accompanied by its respective code snippet, allowing you to easily replicate or modify 
-          these designs in your own projects. Explore the different styles, understand the design choices, and get inspired to create forms that not only meet 
-          your needs but also enhance the user experience in your application.
-        </p>
+      <div className="text-center flex flex-col items-start justify-start mb-8">
+        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Form Showcase</h1>
+        <section className="flex justify-start items-start flex-col">
+          <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
+          <p className="text-lg text-left text-text-dark mb-4">
+            The <code className="text-primary-dark">Form</code> component is a comprehensive UI element designed to collect and validate user input across various fields and layouts. It supports different field types, validation rules, and submission methods. Below are examples demonstrating various configurations and use cases of the Form component.
+          </p>
+          <h2 className="text-3xl font-semibold text-secondary-light">Usage Examples</h2>
+        </section>
       </div>
+
 
       {/* 1. Basic Form */}
       <section className="bg-gray-100 p-6 rounded-lg shadow-lg">

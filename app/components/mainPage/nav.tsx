@@ -11,10 +11,10 @@ interface NavBarProps {
 
 const NavBar: FC<NavBarProps> = ({ className }) => {
   return (
-    <nav className={clsx("bg-background-light shadow-md py-4", className)}>
+    <nav className={clsx("bg-background-dark shadow-md py-4", className)}>
       <div className="container mx-auto flex justify-between items-center px-4">
-        <div className="text-xl flex justify-center items-center gap-3 font-bold text-primary-light">
-            <GiQuickSlash size={25} color='#4F46E5' />
+        <div className="text-xl flex justify-center items-center gap-3 font-bold text-primary-dark">
+            <GiQuickSlash size={25} color='#6366f1' />
           <Link href="/">QuickUI</Link>
         </div>
         <ul className="flex   space-x-6">

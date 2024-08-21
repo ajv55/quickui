@@ -6,11 +6,13 @@ import clsx from 'clsx';
 const Sidebar: FC = () => {
 
   const links = [
+    { name: 'Alert', href: '/getStarted/alert' },
     { name: 'Buttons', href: '/getStarted/button' },
     { name: 'Cards', href: '/getStarted/card' },
     { name: 'Modals', href: '/getStarted/modal' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Forms', href: '/getStarted/form' },
+    
     // Add more component links here
   ];
 

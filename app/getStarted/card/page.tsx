@@ -282,14 +282,17 @@ const CardShowcase: FC = () => {
   };
 
   return (
-    <div className="w-full py-5 px-4 bg-background-dark overflow-scroll h-screen">
+    <div className="w-full p-8 bg-background-dark overflow-scroll h-screen">
       <div className="container mx-auto">
-        <div className="text-center flex flex-col items-start justify-start mb-12">
+        <div className="text-center flex flex-col items-start justify-start mb-8">
           <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Card Showcase</h1>
-          <div className="bg-gradient-to-r from-secondary-light to-primary-light h-1 w-full mb-8" />
-          <p className="text-lg text-text-dark text-left leading-relaxed w-full mx-auto">
-            Welcome to the <span className='bg-gradient-to-br text-xl from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent'>Card Showcase</span>! This page is dedicated to displaying a variety of card components that can be used to present content in an organized and visually appealing manner. Cards are versatile UI elements that can encapsulate information, such as user profiles, product details, or summaries of articles, into a compact and interactive form. In this showcase, you'll find a diverse collection of card designs, each tailored to highlight different types of content and use cases. Each example comes with its corresponding code snippet, allowing you to effortlessly integrate these designs into your projects. Explore the different styles and functionalities offered by these card components, and get inspired to create compelling user interfaces that effectively convey information.
-          </p>
+          <section className=" flex justify-start items-start flex-col">
+            <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
+            <p className="text-lg text-left text-text-dark mb-4">
+              The <code className="text-primary-dark">Card</code> component is a versatile and visually appealing component designed to display content in a structured manner. It supports various styles such as default, outlined, elevated, image-based, and more. Below are examples showcasing different variations of the Card component.
+            </p>
+            <h2 className="text-3xl font-semibold text-secondary-light ">Usage Examples</h2>
+          </section>
         </div>
 
 
