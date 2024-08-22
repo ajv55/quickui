@@ -3,7 +3,8 @@ import { FC } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { GiQuickSlash } from "react-icons/gi";
-import { CustomButton, AnimatedButton } from 'quick-ui-library';
+import { CustomButton } from 'quick-ui-library';
+import Alert from 'quick-ui-library';
 
 interface NavBarProps {
   className?: string;

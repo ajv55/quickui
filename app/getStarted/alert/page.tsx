@@ -48,6 +48,7 @@ export default ExamplePage;
         <span className='bg-gradient-to-l from-primary-light to-secondary-light bg-clip-text text-transparent'>
           Alert Component Showcase
         </span>
+
       </h1>
       
       <section className="mb-8">

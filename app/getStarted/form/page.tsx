@@ -39,7 +39,7 @@ const Showcase: React.FC = () => {
   };
 
   return (
-    <div className="py-6 px-4 w-full bg-background-dark h-screen overflow-scroll space-y-12">
+    <div className="p-8 w-full bg-background-dark h-screen overflow-scroll space-y-12">
       <div className="text-center flex flex-col items-start justify-start mb-8">
         <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Form Showcase</h1>
         <section className="flex justify-start items-start flex-col">
