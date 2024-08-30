@@ -13,9 +13,14 @@ const Sidebar: FC = () => {
     { name: 'Cards', href: '/getStarted/card' },
     { name: 'Carousel', href: '/getStarted/carousel' },
     { name: 'Clipboard', href: '/getStarted/clipboard' },
-    { name: 'Modals', href: '/getStarted/modal' },
-    { name: 'Input Fields', href: '/getStarted/input' },
+    { name: 'DatePicker', href: '/getStarted/datepicker' },
+    { name: 'Dropdown', href: '/getStarted/dropdown' },
     { name: 'Forms', href: '/getStarted/form' },
+    { name: 'Indictors', href: '/getStarted/indictors' },
+    { name: 'Input Fields', href: '/getStarted/input' },
+    { name: 'Modals', href: '/getStarted/modal' },
+    
+    
     
     // Add more component links here
   ];
@@ -26,7 +31,7 @@ const Sidebar: FC = () => {
         QuickUI Components
       </div>
       <nav className="mt-6 overflow-scroll">
-        <ul className="space-y-4">
+        <ul className="space-y-2">
           {/* Getting Started Section */}
           <li>
             <Link

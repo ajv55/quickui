@@ -51,7 +51,7 @@ const MyComponent = () => (
       <section className="mb-8">
         <h2 className="text-3xl font-semibold text-secondary-light mb-4">Installation</h2>
         <p className="text-lg text-text-dark mb-4">
-          To start using QuickUI, you'll need to install the library via npm or yarn. Open your terminal and run the following command:
+          To start using QuickUI, you&#39;ll need to install the library via npm or yarn. Open your terminal and run the following command:
         </p>
         <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
           <pre>
@@ -85,11 +85,11 @@ const MyComponent = () => (
       <section className="mb-8">
         <h2 className="text-3xl font-semibold text-secondary-light mb-4">Configuration</h2>
         <p className="text-lg text-text-dark mb-4">
-          After installing the library, you'll need to set up Tailwind CSS and Framer Motion in your project if you haven't already. Here's how to do it:
+          After installing the library, you&#39;ll need to set up Tailwind CSS and Framer Motion in your project if you haven&#39;t already. Here&#39;s how to do it:
         </p>
         <h3 className="text-2xl font-bold text-primary-dark mb-2">1. Setting up Tailwind CSS</h3>
         <p className="text-lg text-text-dark mb-4">
-          If you're new to Tailwind CSS, you can follow the official <Link href="https://tailwindcss.com/docs/installation" className="text-secondary-light underline">installation guide</Link>. For a typical React setup, you can install Tailwind CSS with the following commands:
+          If you&#39;re new to Tailwind CSS, you can follow the official <Link href="https://tailwindcss.com/docs/installation" className="text-secondary-light underline">installation guide</Link>. For a typical React setup, you can install Tailwind CSS with the following commands:
         </p>
         <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
           <pre>
@@ -135,7 +135,7 @@ const MyComponent = () => (
           </CopyToClipboard>
         </div>
         <p className="text-lg text-text-dark mb-4">
-          Or, if you're using yarn:
+          Or, if you&#39;re using yarn:
         </p>
         <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
           <pre>
@@ -154,7 +154,7 @@ const MyComponent = () => (
       <section className="mb-8">
         <h2 className="text-3xl font-semibold text-secondary-light mb-4">Usage</h2>
         <p className="text-lg text-text-dark mb-4">
-          Once you've completed the installation and configuration, you can start using QuickUI components in your project. Here's an example of how to use the <code className="text-primary-dark">Button</code> component:
+          Once you&#39;ve completed the installation and configuration, you can start using QuickUI components in your project. Here&#39;s an example of how to use the <code className="text-primary-dark">Button</code> component:
         </p>
         <div className="relative bg-background-light p-4 rounded-lg mb-4">
           <pre>
@@ -169,14 +169,14 @@ const MyComponent = () => (
           </CopyToClipboard>
         </div>
         <p className="text-lg text-text-dark">
-          This will render a primary button with the label "Click Me!" on your page. You can customize the button by passing different props to suit your design needs.
+          This will render a primary button with the label &quot;Click Me!&quot; on your page. You can customize the button by passing different props to suit your design needs.
         </p>
       </section>
 
       <section>
         <h2 className="text-3xl font-semibold text-secondary-light mb-4">Next Steps</h2>
         <p className="text-lg text-text-dark mb-4">
-          Now that you've set up QuickUI and learned the basics of using its components, you can explore the full documentation to discover more components and advanced usage. Check out the <Link href="/getStarted/component" className="text-secondary-light underline">Components</Link> section to start building with QuickUI.
+          Now that you&#39;ve set up QuickUI and learned the basics of using its components, you can explore the full documentation to discover more components and advanced usage. Check out the <Link href="/getStarted/component" className="text-secondary-light underline">Components</Link> section to start building with QuickUI.
         </p>
         <p className="text-lg text-text-dark">
           Happy coding!
