@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaCopy } from 'react-icons/fa';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { gruvboxLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Alert from '../../components/alert'; // Adjust the path as needed
 
 const AlertShowcase: React.FC = () => {
@@ -115,7 +115,7 @@ export default ExamplePage;
               {copiedIndex === 0 && <span className="ml-2 text-sm text-green-500">Copied!</span>}
             </button>
           </CopyToClipboard>
-          <SyntaxHighlighter language="typescript" style={solarizedlight} customStyle={{ padding: '1rem', borderRadius: '0.5rem' }}>
+          <SyntaxHighlighter language="typescript" style={gruvboxLight} customStyle={{ padding: '1rem', borderRadius: '0.5rem' }}>
             {alertCode}
           </SyntaxHighlighter>
         </div>
