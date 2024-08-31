@@ -19,6 +19,7 @@ const Sidebar: FC = () => {
     { name: 'Footers', href: '/getStarted/footer' },
     { name: 'Gallery', href: '/getStarted/gallery' },
     { name: 'List Group', href: '/getStarted/listGroup' },
+    { name: 'Navgation Bar', href: '/getStarted/navbar' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
@@ -29,7 +30,7 @@ const Sidebar: FC = () => {
   ];
 
   return (
-    <aside className="w-64 h-screen bg-primary-dark text-white shadow-lg">
+    <aside className="w-64 h-screen bg-primary-dark overflow-x-scroll text-white shadow-lg">
       <div className="p-4 text-3xl font-bold text-secondary-light">
         QuickUI Components
       </div>
