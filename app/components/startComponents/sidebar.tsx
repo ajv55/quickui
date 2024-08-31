@@ -21,6 +21,7 @@ const Sidebar: FC = () => {
     { name: 'List Group', href: '/getStarted/listGroup' },
     { name: 'Navgation Bar', href: '/getStarted/navbar' },
     { name: 'Pagination', href: '/getStarted/pagination' },
+    { name: 'Popover', href: '/getStarted/popover' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
