@@ -18,6 +18,7 @@ const Sidebar: FC = () => {
     { name: 'Forms', href: '/getStarted/form' },
     { name: 'Footers', href: '/getStarted/footer' },
     { name: 'Gallery', href: '/getStarted/gallery' },
+    { name: 'List Group', href: '/getStarted/listGroup' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
