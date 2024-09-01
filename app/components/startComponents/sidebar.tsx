@@ -25,6 +25,7 @@ const Sidebar: FC = () => {
     { name: 'Progress Bars', href: '/getStarted/progress' },
     { name: 'Rating', href: '/getStarted/rating' },
     { name: 'Sidebar', href: '/getStarted/sidebar' },
+    { name: 'Skeleton', href: '/getStarted/skeleton' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
