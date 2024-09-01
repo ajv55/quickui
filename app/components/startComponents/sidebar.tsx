@@ -18,7 +18,10 @@ const Sidebar: FC = () => {
     { name: 'Forms', href: '/getStarted/form' },
     { name: 'Footers', href: '/getStarted/footer' },
     { name: 'Gallery', href: '/getStarted/gallery' },
+    { name: 'Indictors', href: '/getStarted/indictors' },
+    { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'List Group', href: '/getStarted/listGroup' },
+    { name: 'Modals', href: '/getStarted/modal' },
     { name: 'Navgation Bar', href: '/getStarted/navbar' },
     { name: 'Pagination', href: '/getStarted/pagination' },
     { name: 'Popover', href: '/getStarted/popover' },
@@ -27,10 +30,7 @@ const Sidebar: FC = () => {
     { name: 'Sidebar', href: '/getStarted/sidebar' },
     { name: 'Skeleton', href: '/getStarted/skeleton' },
     { name: 'Table', href: '/getStarted/table' },
-    { name: 'Indictors', href: '/getStarted/indictors' },
-    { name: 'Input Fields', href: '/getStarted/input' },
-    { name: 'Modals', href: '/getStarted/modal' },
-    
+    { name: 'Tab', href: '/getStarted/tab' },
     
     
     // Add more component links here
