@@ -22,6 +22,7 @@ const Sidebar: FC = () => {
     { name: 'Navgation Bar', href: '/getStarted/navbar' },
     { name: 'Pagination', href: '/getStarted/pagination' },
     { name: 'Popover', href: '/getStarted/popover' },
+    { name: 'Progress Bars', href: '/getStarted/progress' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
