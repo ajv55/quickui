@@ -26,6 +26,7 @@ const Sidebar: FC = () => {
     { name: 'Rating', href: '/getStarted/rating' },
     { name: 'Sidebar', href: '/getStarted/sidebar' },
     { name: 'Skeleton', href: '/getStarted/skeleton' },
+    { name: 'Table', href: '/getStarted/table' },
     { name: 'Indictors', href: '/getStarted/indictors' },
     { name: 'Input Fields', href: '/getStarted/input' },
     { name: 'Modals', href: '/getStarted/modal' },
