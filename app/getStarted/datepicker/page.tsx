@@ -41,7 +41,7 @@ const DatePickerShowcase: React.FC = () => {
           datePickerClassName="p-4 border border-gray-300 rounded-md"
         />
       ),
-      code: `<DatePickerComponent
+      code: `<DatePicker
   selectedDate={selectedDate}
   onChange={(date) => setSelectedDate(date)}
   datePickerClassName="p-4 border border-gray-300 rounded-md"
@@ -64,7 +64,7 @@ const DatePickerShowcase: React.FC = () => {
           datePickerClassName="p-4 border border-gray-300 rounded-md shadow-lg"
         />
       ),
-      code: `<DatePickerComponent
+      code: `<DatePicker
   isRangePicker
   startDate={startDate}
   endDate={endDate}
@@ -88,7 +88,7 @@ const DatePickerShowcase: React.FC = () => {
           datePickerClassName="p-4 border border-gray-300 rounded-md"
         />
       ),
-      code: `<DatePickerComponent
+      code: `<DatePicker
   selectedDate={selectedDate}
   onChange={(date) => setSelectedDate(date)}
   dateFormat="dd/MM/yyyy"

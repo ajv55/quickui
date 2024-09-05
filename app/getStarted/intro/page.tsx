@@ -2,8 +2,7 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { FaCopy } from 'react-icons/fa';
-
+import { FaChevronRight, FaCopy, FaFolder, FaHome } from 'react-icons/fa';
 const GettingStarted: FC = () => {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
@@ -65,21 +64,6 @@ const MyComponent = () => (
             </button>
           </CopyToClipboard>
         </div>
-        <p className="text-lg text-text-dark">
-          Alternatively, if you prefer using yarn:
-        </p>
-        <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
-          <pre>
-            <code className="text-lg text-secondary-light">
-              {codeSnippets[1]}
-            </code>
-          </pre>
-          <CopyToClipboard text={codeSnippets[1]} onCopy={() => handleCopy(1)}>
-            <button className="absolute top-2 right-2 text-secondary-light">
-              {copiedIndex === 1 ? 'Copied!' : <FaCopy />}
-            </button>
-          </CopyToClipboard>
-        </div>
       </section>
 
       <section className="mb-8">
@@ -134,21 +118,7 @@ const MyComponent = () => (
             </button>
           </CopyToClipboard>
         </div>
-        <p className="text-lg text-text-dark mb-4">
-          Or, if you&#39;re using yarn:
-        </p>
-        <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
-          <pre>
-            <code className="text-lg text-secondary-light">
-              {codeSnippets[5]}
-            </code>
-          </pre>
-          <CopyToClipboard text={codeSnippets[5]} onCopy={() => handleCopy(5)}>
-            <button className="absolute top-2 right-2 text-secondary-light">
-              {copiedIndex === 5 ? 'Copied!' : <FaCopy />}
-            </button>
-          </CopyToClipboard>
-        </div>
+       
       </section>
 
       <section className="mb-8">
@@ -176,7 +146,7 @@ const MyComponent = () => (
       <section>
         <h2 className="text-3xl font-semibold text-secondary-light mb-4">Next Steps</h2>
         <p className="text-lg text-text-dark mb-4">
-          Now that you&#39;ve set up QuickUI and learned the basics of using its components, you can explore the full documentation to discover more components and advanced usage. Check out the <Link href="/getStarted/component" className="text-secondary-light underline">Components</Link> section to start building with QuickUI.
+          Now that you&#39;ve set up QuickUI and learned the basics of using its components, you can explore the full documentation to discover more components and advanced usage. Check out the <Link href="/getStarted/button" className="text-secondary-light underline">Components</Link> section to start building with QuickUI.
         </p>
         <p className="text-lg text-text-dark">
           Happy coding!
