@@ -44,7 +44,7 @@ export default ExamplePage;
 
   return (
     <div className="w-full h-screen overflow-scroll bg-background-dark p-8">
-      <h1 className="text-5xl font-bold text-primary-dark mb-6">
+      <h1 className="lg:text-5xl text-4xl font-bold text-primary-dark mb-6">
         <span className='bg-gradient-to-l from-primary-light to-secondary-light bg-clip-text text-transparent'>
           Alert Component Showcase
         </span>
