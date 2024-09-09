@@ -18,7 +18,7 @@ const NavBar: FC<NavBarProps> = ({ className }) => {
             <GiQuickSlash size={25} color='#6366f1' />
           <Link href="/">QuickUI</Link>
         </div>
-        <ul className="flex   space-x-6">
+        <ul className="lg:flex hidden  space-x-6">
           <li><Link className='text-primary-dark cursor-pointer hover:underline hover:underline-offset-2 hover:text-secondary-dark' href="#features">Features</Link></li>
           <li><Link className='text-primary-dark cursor-pointer hover:underline hover:underline-offset-2 hover:text-secondary-dark' href="#why-us">Why QuickUI</Link></li>
           <li><Link className='text-primary-dark cursor-pointer hover:underline hover:underline-offset-2 hover:text-secondary-dark' href="#how-it-works">How It Works</Link></li>

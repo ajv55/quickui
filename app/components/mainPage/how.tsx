@@ -36,7 +36,7 @@ const HowItWorksSection: FC<HowItWorksSectionProps> = ({ className }) => {
   return (
     <section id="how-it-works" className={clsx("relative py-20 bg-gradient-to-b from-background-dark via-primary-light to-background-dark text-text-light", className)}>
       <div className="container mx-auto text-center mb-16">
-        <h2 className="text-6xl bg-gradient-to-tr from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent font-bold">How It Works</h2>
+        <h2 className="lg:text-6xl text-5xl bg-gradient-to-tr from-primary-light via-accent-light to-secondary-light bg-clip-text text-transparent font-bold">How It Works</h2>
       </div>
      <div className=' '>
       <div className="relative w-full mx-auto p-3 flex flex-col justify-start items-start space-y-8">
@@ -62,7 +62,7 @@ const HowItWorksSection: FC<HowItWorksSectionProps> = ({ className }) => {
 
         {/* 3D Coding Symbol */}
         <motion.div
-          className="absolute top-1/2 right-64 transform -translate-x-1/2 -translate-y-1/2 text-secondary-light text-8xl font-bold"
+          className="absolute lg:block hidden top-1/2 right-64 transform -translate-x-1/2 -translate-y-1/2 text-secondary-light text-8xl font-bold"
           animate={{ rotateY: [0, 360], scale: [3, 3, 3] }}
           transition={{ duration: 10, ease: "linear", repeat: Infinity }}
           style={{ filter: "drop-shadow(0 3px 10px rgba(59, 130, 246, 0.5))" }}

@@ -3,7 +3,7 @@ import Sidebar from '../components/startComponents/sidebar'
 
 export default function Layout({children}: {children: React.ReactNode}) {
   return (
-    <div className='flex lg:flex-row'>
+    <div className='flex lg:flex-row flex-col'>
         <Sidebar />
         {children}
     </div>
