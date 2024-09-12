@@ -31,8 +31,8 @@ const MyComponent = () => (
 
   return (
     <div className="w-full h-screen overflow-scroll bg-background-dark p-8">
-      <h1 className="text-5xl font-bold text-primary-dark mb-6">
-        <span className='bg-gradient-to-l from-primary-light to-secondary-light bg-clip-text text-transparent'>
+      <h1 className="lg:text-5xl text-4xl font-bold text-primary-dark mb-6">
+        <span className='bg-gradient-to-l  from-primary-light to-secondary-light bg-clip-text text-transparent'>
           Getting Started
         </span> with QuickUI
       </h1>
@@ -52,14 +52,14 @@ const MyComponent = () => (
         <p className="text-lg text-text-dark mb-4">
           To start using QuickUI, you&#39;ll need to install the library via npm or yarn. Open your terminal and run the following command:
         </p>
-        <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
-          <pre>
+        <div className="relative overflow-scroll bg-primary-dark p-4 rounded-lg mb-4">
+          <pre className='whitespace-pre-wrap'>
             <code className="text-lg text-secondary-light">
               {codeSnippets[0]}
             </code>
           </pre>
           <CopyToClipboard text={codeSnippets[0]} onCopy={() => handleCopy(0)}>
-            <button className="absolute top-2 right-2 text-secondary-light">
+            <button className=" absolute top-2 right-2 text-secondary-light">
               {copiedIndex === 0 ? 'Copied!' : <FaCopy />}
             </button>
           </CopyToClipboard>
@@ -75,9 +75,9 @@ const MyComponent = () => (
         <p className="text-lg text-text-dark mb-4">
           If you&#39;re new to Tailwind CSS, you can follow the official <Link href="https://tailwindcss.com/docs/installation" className="text-secondary-light underline">installation guide</Link>. For a typical React setup, you can install Tailwind CSS with the following commands:
         </p>
-        <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
-          <pre>
-            <code className="text-lg text-secondary-light">
+        <div className="relative bg-primary-dark overflow-scroll p-4 rounded-lg mb-4">
+          <pre className="whitespace-pre-wrap">
+            <code className="text-lg text-secondary-light break-all">
               {codeSnippets[2]}
             </code>
           </pre>
@@ -87,6 +87,7 @@ const MyComponent = () => (
             </button>
           </CopyToClipboard>
         </div>
+
         <p className="text-lg text-text-dark mb-4">
           Then, initialize Tailwind CSS:
         </p>
@@ -107,7 +108,7 @@ const MyComponent = () => (
           Install Framer Motion using npm or yarn:
         </p>
         <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
-          <pre>
+          <pre className='whitespace-pre-wrap'>
             <code className="text-lg text-secondary-light">
               {codeSnippets[4]}
             </code>
@@ -127,7 +128,7 @@ const MyComponent = () => (
           Once you&#39;ve completed the installation and configuration, you can start using QuickUI components in your project. Here&#39;s an example of how to use the <code className="text-primary-dark">Button</code> component:
         </p>
         <div className="relative bg-background-light p-4 rounded-lg mb-4">
-          <pre>
+          <pre className='whitespace-pre-wrap'>
             <code className="text-lg text-text-light">
               {codeSnippets[6]}
             </code>

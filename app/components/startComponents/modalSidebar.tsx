@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import clsx from "clsx";
 
 interface LinkItem {
   name: string;
@@ -35,9 +36,20 @@ const ModalSidebar: React.FC<SidebarProps> = ({ links, isOpen, onClose }) => {
           </button>
         </div>
         <ul className="space-y-4 p-4">
+        <li>
+              <Link
+                className={clsx(
+                  'block px-2 py-3 rounded-sm hover:text-text-light text-lg hover:border-r-8 hover:border-background-dark hover:bg-gradient-to-r from-primary-dark to-secondary-light',
+                )}
+                onClick={onClose} 
+                href="/getStarted/intro"
+              >
+                Getting Started
+              </Link>
+            </li>
           {links?.map((link) => (
             <li key={link.name}>
-              <Link onClick={onClose} className="text-lg  hover:p-2 hover:shadow-md hover:shadow-secondary-dark hover:border-b-4 hover:bg-primary-dark text-indigo-600 hover:text-secondary-light hover:border hover:border-r-4 hover:border-background-dark" href={link.href}>
+              <Link onClick={onClose} className="text-lg text-primary-dark hover:p-2 hover:shadow-md hover:shadow-secondary-dark hover:border-b-4 hover:bg-primary-dark hover:text-secondary-light hover:border hover:border-r-4 hover:border-background-dark" href={link.href}>
                   {link.name}
               </Link>
             </li>

@@ -1,13 +1,22 @@
 'use client';
 import React, { useState } from 'react';
 import VersatileInputField from '@/app/components/input';
-import { FaUser, FaLock, FaEnvelope, FaPhone, FaCalendar, FaSearch, FaGlobe } from 'react-icons/fa';
+import { FaUser, FaLock, FaEnvelope, FaPhone, FaCalendar, FaSearch, FaGlobe, FaCopy } from 'react-icons/fa';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { duotoneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const Showcase: React.FC = () => {
   const [textValue, setTextValue] = useState<string>('');
   const [error, setError] = useState<string>('');
+
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const handleCopy = (index: number) => {
+    setCopiedIndex(index);
+    setTimeout(() => {
+      setCopiedIndex(null);
+    }, 2000);
+  };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTextValue(event.target.value);
@@ -21,7 +30,7 @@ const Showcase: React.FC = () => {
   return (
     <div className="p-8 w-full bg-background-dark h-screen overflow-scroll space-y-12">
       <div className="text-center flex flex-col items-start justify-start mb-8">
-        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Input Field Showcase</h1>
+        <h1 className="lg:text-6xl text-4xl text-left font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Input Field Showcase</h1>
         <section className="flex justify-start items-start flex-col">
           <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
           <p className="text-lg text-left text-text-dark mb-4">
@@ -42,7 +51,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="basic"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="basic-input"
@@ -52,6 +61,12 @@ const Showcase: React.FC = () => {
   styleType="basic"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(0)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 0 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -65,7 +80,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="rounded"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="rounded-input"
@@ -75,6 +90,12 @@ const Showcase: React.FC = () => {
   styleType="rounded"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(1)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 1 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -89,7 +110,7 @@ const Showcase: React.FC = () => {
           styleType="icon"
           icon={<FaUser size={20} />}
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="icon-input"
@@ -100,6 +121,12 @@ const Showcase: React.FC = () => {
   icon={<FaUser size={20} />}
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(2)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 2 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -113,7 +140,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="outlined"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="outlined-input"
@@ -123,6 +150,12 @@ const Showcase: React.FC = () => {
   styleType="outlined"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(4)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 4 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -136,7 +169,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="animated"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="animated-input"
@@ -146,6 +179,12 @@ const Showcase: React.FC = () => {
   styleType="animated"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(5)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 5 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -161,7 +200,7 @@ const Showcase: React.FC = () => {
           styleType="basic"
           errorMessage={error}
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="password-input"
@@ -173,6 +212,12 @@ const Showcase: React.FC = () => {
   errorMessage={error}
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(6)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 6 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -187,7 +232,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="basic"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="email-input"
@@ -198,6 +243,12 @@ const Showcase: React.FC = () => {
   styleType="basic"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(7)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 7 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -212,7 +263,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="basic"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="phone-input"
@@ -223,6 +274,12 @@ const Showcase: React.FC = () => {
   styleType="basic"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(8)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 8 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -237,7 +294,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="basic"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="date-input"
@@ -248,6 +305,12 @@ const Showcase: React.FC = () => {
   styleType="basic"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(9)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 9 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -262,7 +325,7 @@ const Showcase: React.FC = () => {
           styleType="animated"
           icon={<FaSearch size={20} />}
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="search-input"
@@ -273,6 +336,12 @@ const Showcase: React.FC = () => {
   icon={<FaSearch size={20} />}
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(10)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 10 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
 
@@ -287,7 +356,7 @@ const Showcase: React.FC = () => {
           onChange={handleChange}
           styleType="glowing"
         />
-        <div className="mt-4">
+        <div className="mt-4 relative">
           <SyntaxHighlighter language="typescript" style={duotoneDark}>
             {`<VersatileInputField
   id="glowing-input"
@@ -297,6 +366,12 @@ const Showcase: React.FC = () => {
   styleType="glowing"
 />`}
           </SyntaxHighlighter>
+          <button
+              onClick={() => handleCopy(11)}
+              className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition "
+            >
+              {copiedIndex === 11 ? 'Copied!' : <FaCopy />}
+            </button>
         </div>
       </section>
     </div>

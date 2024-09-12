@@ -141,7 +141,7 @@ const ModalShowcase: FC = () => {
   return (
     <div className="p-8 w-full bg-background-dark overflow-scroll h-screen">
       <div className="text-center flex flex-col items-start justify-start mb-8">
-        <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Modal Showcase</h1>
+        <h1 className="lg:text-6xl text-4xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">Modal Showcase</h1>
         <section className="flex justify-start items-start flex-col">
           <h2 className="text-3xl font-semibold text-secondary-light mb-4">Introduction</h2>
           <p className="text-lg text-left text-text-dark mb-4">
