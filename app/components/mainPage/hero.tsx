@@ -28,7 +28,7 @@ const HeroSection: FC<HeroSectionProps> = ({ className }) => {
     <section className={clsx("relative py-12 text-primary-light lg:bg-gradient-to-l bg-gradient-to-t from-primary-light to-background-light", className)}>
       
       <div className="w-full  h-[29rem] mx-auto flex lg:flex-row flex-col items-center justify-between relative z-10">
-        <div className="lg:w-1/2 w-full p-2">
+        <div className="lg:w-1/2 w-full p-3">
           <h1 className="lg:text-6xl text-5xl font-bold mb-4">
             Build Faster with <span className="bg-gradient-to-r from-primary-light to-secondary-dark bg-clip-text text-transparent">QuickUI</span>
           </h1>
