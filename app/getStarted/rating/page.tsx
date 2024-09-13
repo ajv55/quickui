@@ -36,7 +36,7 @@ const RatingShowcase: React.FC = () => {
 
   return (
     <div className="w-full h-screen overflow-scroll bg-background-dark p-8">
-      <h1 className="text-6xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">
+      <h1 className="lg:text-6xl text-4xl font-bold bg-gradient-to-br from-primary-light via-secondary-light to-secondary-light bg-clip-text text-transparent mb-4">
         Rating Component Showcase
       </h1>
 

@@ -27,16 +27,6 @@ const ModalSidebar: React.FC<SidebarProps> = ({ links, isOpen, onClose }) => {
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
         <div className="flex justify-between items-center p-2">
-            <h1 className="text-xl text-secondary-dark">Components</h1>
-          <button
-            className="text-indigo-600 text-2xl"
-            onClick={onClose}
-          >
-            &times;
-          </button>
-        </div>
-        <ul className="space-y-4 p-4">
-        <li>
               <Link
                 className={clsx(
                   'block px-2 py-3 rounded-sm hover:text-text-light text-lg hover:border-r-8 hover:border-background-dark hover:bg-gradient-to-r from-primary-dark to-secondary-light',
@@ -46,7 +36,15 @@ const ModalSidebar: React.FC<SidebarProps> = ({ links, isOpen, onClose }) => {
               >
                 Getting Started
               </Link>
-            </li>
+          <button
+            className="text-indigo-600 text-2xl"
+            onClick={onClose}
+          >
+            &times;
+          </button>
+        </div>
+        <ul className="space-y-4 p-4">
+          <h1 className="text-2xl text-secondary-dark">Components</h1>
           {links?.map((link) => (
             <li key={link.name}>
               <Link onClick={onClose} className="text-lg text-primary-dark hover:p-2 hover:shadow-md hover:shadow-secondary-dark hover:border-b-4 hover:bg-primary-dark hover:text-secondary-light hover:border hover:border-r-4 hover:border-background-dark" href={link.href}>
