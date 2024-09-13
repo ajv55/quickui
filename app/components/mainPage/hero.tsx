@@ -38,10 +38,10 @@ const HeroSection: FC<HeroSectionProps> = ({ className }) => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-primary-light flex justify-evenly items-center gap-4 lg:w-[30%] w-[50%] text-center hover:bg-secondary-light shadow-md hover:text-primary-light hover:shadow-primary-light text-text-dark lg:px-6 px-3 lg:py-3 py-2 rounded-md font-semibold"
+            className="bg-primary-light flex justify-evenly items-center gap-4 lg:w-[30%] w-[50%] text-center group hover:bg-secondary-light shadow-md hover:text-primary-light hover:shadow-primary-light text-text-dark lg:px-6 px-3 lg:py-3 py-2 rounded-md font-semibold"
           >
             <Link className='lg:text-lg text-sm font-extrabold tracking-wide' href='/getStarted/intro'>Get Started</Link>
-            <HiOutlineArrowNarrowRight size={isSmallScreen ? 33 : 40 } className='text-secondary-light' />
+            <HiOutlineArrowNarrowRight size={isSmallScreen ? 33 : 40 } className='text-secondary-light cursor-pointer group-hover:text-primary-light' />
           </motion.div>
         </div>
         <div className=" lg:w-1/2 lg:block hidden w-full h-[28rem] z-40">
