@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { IoMdClose } from "react-icons/io";
 
 interface NavbarProps {
   brandName?: string;
@@ -13,6 +14,7 @@ interface NavbarProps {
   navClassName?: string;
   linkClassName?: string;
   mobileMenuClassName?: string;
+  closeClassName?: string
 }
 
 const Navbar: React.FC<NavbarProps> = ({
@@ -21,7 +23,8 @@ const Navbar: React.FC<NavbarProps> = ({
   className,
   navClassName,
   linkClassName,
-  mobileMenuClassName
+  mobileMenuClassName,
+  closeClassName
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -53,7 +56,10 @@ const Navbar: React.FC<NavbarProps> = ({
         animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : '-100%' }}
         transition={{ duration: 0.3 }}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-4">
+        <div className="flex flex-col items-center justify-start h-full space-y-4">
+          <div className='flex w-full justify-end items-center'>
+           <IoMdClose onClick={toggleMenu} size={40} className={clsx('text-secondary-dark', closeClassName)} />
+          </div>
           {links.map((link, index) => (
             <Link key={index} href={link.href} className={clsx('text-white text-lg', linkClassName)} onClick={toggleMenu}>
               {link.text}

@@ -3,6 +3,7 @@ import React, { FC, useState } from 'react';
 import Modal from '../../components/modal';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import {  atomDark, dark, duotoneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { FaCopy } from 'react-icons/fa';
 
 const modalExamples = [
   {
@@ -129,6 +130,15 @@ const modalExamples = [
 
 const ModalShowcase: FC = () => {
   const [openModal, setOpenModal] = useState<string | null>(null);
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+
+  const handleCopy = (index: number) => {
+    setCopiedIndex(index);
+    setTimeout(() => {
+      setCopiedIndex(null);
+    }, 2000);
+  };
+
 
   const handleOpenModal = (id: string) => {
     setOpenModal(id);
@@ -150,7 +160,7 @@ const ModalShowcase: FC = () => {
           <h2 className="text-3xl font-semibold text-secondary-light">Usage Examples</h2>
         </section>
       </div>
-      {modalExamples.map((modal: any) => (
+      {modalExamples.map((modal: any, index: number) => (
         <div key={modal.id} className="mb-12 border border-gray-200 rounded-lg bg-background-light shadow-lg p-6">
           <h3 className="text-3xl font-semibold mb-3 text-primary-light">{modal.title}</h3>
           <p className="mb-4 text-lg text-text-light">{modal.description}</p>
@@ -180,10 +190,16 @@ const ModalShowcase: FC = () => {
             </div>
           )}
 
-          <div className="mt-6">
+          <div className="mt-6 relative">
             <SyntaxHighlighter language="typescript" style={duotoneDark} className="p-4 rounded-lg bg-gray-100">
               {modal.code}
             </SyntaxHighlighter>
+            <button
+                onClick={() => handleCopy(index)}
+                className="absolute top-2 right-2 p-2 rounded text-sm font-semibold text-primary-light transition"
+              >
+                {copiedIndex === index ? 'Copied!' : <FaCopy />}
+              </button>
           </div>
         </div>
       ))}
