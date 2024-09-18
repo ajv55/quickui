@@ -103,6 +103,7 @@ const MyComponent = () => (
             </button>
           </CopyToClipboard>
         </div>
+
         <h3 className="text-2xl font-bold text-primary-dark mb-2">2. Setting up Framer Motion</h3>
         <p className="text-lg text-text-dark mb-4">
           Install Framer Motion using npm or yarn:
@@ -116,6 +117,23 @@ const MyComponent = () => (
           <CopyToClipboard text={codeSnippets[4]} onCopy={() => handleCopy(4)}>
             <button className="absolute top-2 right-2 text-secondary-light">
               {copiedIndex === 4 ? 'Copied!' : <FaCopy />}
+            </button>
+          </CopyToClipboard>
+        </div>
+
+        <h3 className="text-2xl font-bold text-primary-dark mb-2">3. Setting up Clsx</h3>
+        <p className="text-lg text-text-dark mb-4">
+          Install Clsx using npm:
+        </p>
+        <div className="relative bg-primary-dark p-4 rounded-lg mb-4">
+          <pre className='whitespace-pre-wrap'>
+            <code className="text-lg text-secondary-light">
+            npm i clsx
+            </code>
+          </pre>
+          <CopyToClipboard text={'npm i clsx'} onCopy={() => handleCopy(6)}>
+            <button className="absolute top-2 right-2 text-secondary-light">
+              {copiedIndex === 6 ? 'Copied!' : <FaCopy />}
             </button>
           </CopyToClipboard>
         </div>
