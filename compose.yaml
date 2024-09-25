@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./next-config.js
+          action: rebuild
+        - path: .
+          target: /app
+          action: sync
+    environment: 
+      BASED_URL: "https://quickuilibrary.vercel.app/"
+    command: npm run dev
+    volumes:
+      - .:/app
+      - /app/node_modules
