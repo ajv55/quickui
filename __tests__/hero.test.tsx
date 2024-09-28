@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import HeroSection from '@/app/components/mainPage/hero'; // Adjust the import path as needed
 import { useRouter } from 'next/navigation';
 import '@testing-library/jest-dom';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 // Mock useRouter
 jest.mock('next/navigation', () => ({
