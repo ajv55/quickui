@@ -10,4 +10,11 @@ describe('contact compnonent', () => {
         const heading = screen.getByRole('heading', {name: /Get In Touch/i});
         expect(heading).toBeInTheDocument();
     })
+
+    it('render a p tag', () => {
+        render(<ContactSection/>)
+
+        const para = screen.getByRole('paragraph');
+        expect(para).toBeInTheDocument();
+    })
 })
