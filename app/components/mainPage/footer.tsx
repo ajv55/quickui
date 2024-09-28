@@ -13,9 +13,9 @@ const Footer: FC<FooterProps> = ({ className }) => {
         <p className="text-sm">&copy; 2024 QuickUI. All rights reserved.</p>
         <div className="mt-4">
           <Link href="#features">Features</Link> | 
-          <Link href="#why-us"> Why QuickUI</Link> | 
-          <Link href="#how-it-works"> How It Works</Link> | 
-          <Link href="#contact"> Contact</Link>
+          <Link href="#why-us">Why QuickUI</Link> | 
+          <Link href="#how-it-works">How It Works</Link> | 
+          <Link href="#contact">Contact</Link>
         </div>
       </div>
     </footer>
