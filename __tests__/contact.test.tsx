@@ -14,7 +14,18 @@ describe('contact compnonent', () => {
     it('render a p tag', () => {
         render(<ContactSection/>)
 
-        const para = screen.getByRole('paragraph');
-        expect(para).toBeInTheDocument();
+        const paragraphElement = screen.getByText(/Have questions or feedback\? We\'d love to hear from you!/i);
+        expect(paragraphElement).toBeInTheDocument();
     })
+
+    it('renders contact us link with correct mailto href', () => {
+        render(<ContactSection />);
+        
+        // Find the anchor element
+        const linkElement = screen.getByRole('link', { name: /contact us/i });
+    
+        // Check that it has the correct href attribute
+        expect(linkElement).toBeInTheDocument();
+        expect(linkElement).toHaveAttribute('href', 'mailto:support@quickui.com');
+      });
 })
