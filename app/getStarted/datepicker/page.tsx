@@ -5,7 +5,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import DatePickerComponent from '../../components/datepicker'; // Adjust the path as needed
 import { FaCode, FaCopy } from 'react-icons/fa';
-import { div } from 'three/webgpu';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 const DatePickerShowcase: React.FC = () => {
