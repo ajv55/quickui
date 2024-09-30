@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import clsx from 'clsx';
-import {Card } from 'quick-ui-library'
 
 interface WhyUsSectionProps {
   className?: string;
