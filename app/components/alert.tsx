@@ -18,13 +18,13 @@ const Alert: FC<AlertProps> = ({ type, message, onClose, className }) => {
   const getIcon = () => {
     switch (type) {
       case 'success':
-        return <FaCheckCircle className="text-green-500" />;
+        return <FaCheckCircle data-testid="icon" className="text-green-500" />;
       case 'error':
-        return <FaTimesCircle className="text-red-500" />;
+        return <FaTimesCircle data-testid="icon" className="text-red-500" />;
       case 'warning':
-        return <FaExclamationTriangle className="text-yellow-500" />;
+        return <FaExclamationTriangle data-testid="icon" className="text-yellow-500" />;
       case 'info':
-        return <FaInfoCircle className="text-blue-500" />;
+        return <FaInfoCircle data-testid="icon" className="text-blue-500" />;
       default:
         return null;
     }
