@@ -32,7 +32,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
     <nav className={clsx('flex items-center', className)} aria-label="breadcrumb">
       {items.map((item, index) => (
         <div key={index} className={clsx('flex items-center', itemClassName)}>
-          {item.icon && <span className={clsx('mr-1', iconClassName)}>{item.icon}</span>}
+          {item.icon && <span data-testid="icon-home" className={clsx('mr-1', iconClassName)}>{item.icon}</span>}
           {item.href ? (
             <Link className={clsx('text-primary-dark hover:text-primary', linkClassName)} href={item.href}>
               {item.label}
