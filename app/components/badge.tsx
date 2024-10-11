@@ -46,7 +46,7 @@ const Badge: FC<BadgeProps> = ({
         className
       )}
     >
-      {icon && <span className="mr-1">{icon}</span>}
+      {icon && <span data-testid="icon" className="mr-1">{icon}</span>}
       {text}
     </span>
   );
